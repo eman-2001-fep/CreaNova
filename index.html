@@ -1,0 +1,691 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>CreaNova</title>
+</head>
+<body class="bg-[#F3F3F3]">
+  <!-- Navbar -->
+  <header class="px-4 md:px-20 py-5">
+    <nav class="flex flex-col lg:flex-row items-center justify-between gap-4 md:gap-7">
+      <!-- Logo -->
+      <div class="text-xl font-bold mr-0 md:mr-12">
+        <span class="text-[#FE5E54]">Crea</span><span class="text-[#312F2F]">Nova.</span>
+      </div>
+
+      <!-- Hamburger Menu -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-3xl focus:outline-none" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Links -->
+      <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 list-none text-base font-medium text-nowrap text-center">
+        <li><a href="#" class="hover:underline" aria-label="Start Here">Start Here <span class="text-xs font-mono">&gt;</span></a></li>
+        <li><a href="#" class="hover:underline text-[#FE5E54]" aria-label="Home">Home</a></li>
+        <li><a href="#" class="hover:underline" aria-label="About Us">About Us</a></li>
+        <li><a href="#" class="hover:underline" aria-label="Services">Services</a></li>
+        <li><a href="#" class="hover:underline" aria-label="Works">Works</a></li>
+        <li><a href="#" class="hover:underline" aria-label="Pricing">Pricing</a></li>
+        <li><a href="#" class="hover:underline" aria-label="Faq">Faq</a></li>
+        <li><a href="#" class="hover:underline" aria-label="Blog">Blog</a></li>
+        <li><a href="#" class="hover:underline" aria-label="Contact Us">Contact Us</a></li>
+      </ul>
+      <div class="flex items-center text-nowrap mt-4 md:mt-0">
+        <button class="bg-[#FE5E54] text-white p-2 md:p-1 rounded-full text-sm font-medium hover:bg-[#FE5E54] flex items-center gap-2" aria-label="Buy Template">
+          Buy Template 
+          <i class="fas fa-arrow-right text-2xl text-[#FE5E54] bg-[#312F2F] rounded-full p-2 md:p-5 w-8 h-8 flex items-center justify-center"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col lg:flex-row py-20 md:py-40 gap-4 justify-start items-center px-4">
+    <div class="relative w-full lg:w-[60%] py-20 md:py-40 lg:-right-24 mt-8 ml-10 sm:ml-0">
+      <div class="absolute flex flex-col gap-2 max-w-full bottom-[90%]">
+        <p class="font-extrabold text-3xl md:text-4xl italic relative">89x
+          <span class="absolute bottom-0 left-0 right-0 w-[50%] h-[50%] bg-white opacity-80 blur-lg"></span>
+        </p>
+        <p class="font-[450]">Le’s build your next big idea CreaNova <br> a powerful Webflow Non Code</p>
+        <p class=""><i class="fas fa-phone-alt text-[#312F2F] bg-[#FE5E54] rounded-full p-1 w-[15%] text-center mr-3" ></i> Call Us Today 800-236-789</p>
+      </div>
+      <div class="absolute flex flex-col gap-2 top-[45%] left-1/2 transform -translate-x-[20%] text-white z-10">
+        <h1 class="font-semibold">Who We Are</h1>
+        <p class="text-sm leading-6">Learn how to become <br>a sales machine</p>
+        <button class="text-left font-medium text-sm underline">Learn more</button>
+      </div>
+      <img class="w-[80%] h-[60%]" src="images/Rectangle_2.png" alt="Background Image">
+      <img class="absolute w-[75%] h-[60%] left-1/2 transform -translate-x-[60%] -translate-y-[100%]" src="images/phone.png" alt="Phone Image">
+    </div>
+    <div class="relative w-full lg:w-[90%] pt-6 ">
+      <button class="absolute px-2 top-4 left-8 md:left-16 font-bold text-white rounded-full text-sm bg-[#FE5E54]">
+        BUSINESS
+      </button>
+      <h1 class="w-full lg:w-[90%] absolute pr-14 left-16  sm:left-24 lg:left-32 mt-14 md:mt-8 transform -translate-x-[15%] -translate-y-[180%] text-3xl md:text-5xl lg:text-6xl text-nowrap mx-6 md:mx-0 text-[#312F2F] font-bold ">Grow Your Business <br>With Our Help</h1>
+      <img class="w-full lg:w-[85%] ml-0 lg:ml-12" src="images/Rectangle_1.png" alt="Background Image">
+      <img class="absolute w-[35%] left-1/2 transform -translate-x-[20%] -translate-y-[100%]" src="images/person.png" alt="Person Image">
+      <div class="absolute flex flex-col gap-1 max-w-full top-20 sm:top-1/2 left-[15%]">
+        <h1 class="font-semibold">Small Business</h1>
+        <p class="text-sm leading-6 ">See how can we help<br> your business</p>
+        <button class="text-left font-medium text-sm underline">Learn more</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<section class="relative flex flex-col items-center justify-center px-4 md:px-20 py-5">
+  <div class="relative w-full flex justify-center">
+    <img class="w-full" src="images/Rectangle_3.png" alt="">
+  </div>
+
+  <!-- Description Inside Rectangle -->
+  <div class="absolute top-[15%] lg:top-[30%] left-1/2 transform -translate-x-[50%] -translate-y-[80%] flex flex-col items-start gap-0 md:gap-2 w-[80%] text-white">
+    <p class="text-sm sm:text-lg md:text-3xl font-bold w-full lg:w-[60%]">
+      Let’s build your next big idea with Pulsar a Non Code Template
+    </p>
+    <p>As easy as just double click and type to edit</p>
+    <p>Pulsar a Non Code Template</p>
+    <p class="absolute -top-[20%] transform -translate-x-[15%] -translate-y-[50%] px-3 font-bold text-white rounded-full text-sm bg-[#FE5E54]">
+      INTRO
+    </p>
+  </div>
+
+  <div class="relative lg:absolute lg:top-[40%] md:left-1/2 transform lg:-translate-x-1/2 
+              flex flex-col lg:flex-row justify-center items-center 
+              md:gap-2 lg:gap-8 
+              w-[80%] 
+              mt-8 lg:mt-0 md:static md:flex md:items-center md:justify-center">
+    <!-- Service Box 1 -->
+    <div class="flex flex-col items-start text-white w-full lg:w-1/3 bg-[#312F2F] rounded-lg my-2 p-4 ">
+      <i class="fas fa-handshake text-lg bg-[#FE5E54] rounded-full mb-4 w-14 h-14 p-4 flex justify-center items-center"></i>
+      <h2 class="text-xl font-bold mb-2">About Us</h2>
+      <p class="w-[80%]">Pulsar template boasts a visually striking and modern design.</p>
+      <button class="mt-4 text-sm font-medium underline">LEARN MORE</button>
+    </div>
+
+    <!-- Service Box 2 -->
+    <div class="flex flex-col items-start text-white w-full lg:w-1/3  bg-[#312F2F] rounded-lg my-2 p-4 ">
+      <i class="fas fa-shield-alt text-lg bg-[#FE5E54] rounded-full mb-4 w-14 h-14 p-4 flex justify-center items-center"></i>
+      <h2 class="text-xl font-bold mb-2">Our Services</h2>
+      <p class="w-[80%]">Fully responsive, adapting to different screen sizes.</p>
+      <button class="mt-4 text-sm font-medium underline">LEARN MORE</button>
+    </div>
+
+    <!-- Service Box 3 -->
+    <div class="flex flex-col items-start text-white w-full lg:w-1/3  bg-[#312F2F] rounded-lg my-2 p-4 ">
+      <i class="fas fa-comments text-lg bg-[#FE5E54] rounded-full mb-4 w-14 h-14 p-4 flex justify-center items-center"></i>
+      <h2 class="text-xl font-bold mb-2">Contact Us</h2>
+      <p class="w-[80%]">Pulsar offers a wide array of thoughtfully designed sections.</p>
+      <button class="mt-4 text-sm font-medium underline">LEARN MORE</button>
+    </div>
+  </div>
+</section>
+<!-- overview section -->
+ <section class="py-16 relative px-4 md:px-20 ">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+      <div class="relative flex justify-center">
+        <img class="w-full h-[40vh] xl:h-[60vh] pl-4" src="images/Rectangle_overview.png" alt="">
+        <img class="absolute w-[35%] left-[60%] -bottom-2 transform -translate-x-2 -translate-y-2" src="images/person_2.png" alt="Person Image">
+        <div class="absolute w-[35%] left-[35%] -bottom-10 sm:-bottom-9 transform -translate-x-1/2 -translate-y-[10%] sm:-translate-x-1/2 sm:-translate-y-[75%] md:-translate-y-[60%] text-white ">
+          <p class="font-bold text-xl md:text-2xl lg:text-5xl italic relative">97%
+            <span class="absolute bottom-0 left-0 right-0 w-10 h-5 bg-zinc-950 opacity-80 blur-lg"></span>
+          </p>
+          <p class=" text-sm  font-bold py-8">Focus on what is more
+            important to you and be
+            more productive
+          </p>
+        </div>
+      </div>
+      <div class="absolute top-30 left-[20%] lg:left-[22%]   xl:left-[25%] transform -translate-x-16 md:-translate-x-32 -translate-y-80 md:-translate-y-44">
+        <p class="font-bold max-w-20 px-2 py-1 text-white rounded-full text-xs bg-[#FE5E54]">
+          OVERVIEW
+        </p>
+        <p class="text-3xl font-bold text-wrap md:text-nowrap ">Welcome to Pulsar</p>
+        <p class="text-[#939394] py-2 text-wrap md:text-nowrap ">An overview of Pulsar benefits</p>
+      </div>
+      <div class="bg-[#FE5E54] rounded-xl w-72 h-auto md:h-[40vh] xl:h-[60vh]">
+        <img class="py-16 px-4 " src="images/Mac-grid.png" alt="">
+        <div class="text-white px-6 py-5">
+          <p class="text-xs font-bold py-2">BENEFITS</p>
+          <p class="text-lg font-bold">With Pulsar you save 
+            time, money and stress</p>
+            <button class="text-xs font-medium text-center border border-white rounded-full px-6 py-2 mt-4">Read More</button>
+        </div>
+      </div>
+      
+    </div>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-8 py-10">
+      
+      <div class="bg-[#FE5E54] rounded-xl w-72 md:w-[30%] h-auto  xl:h-[27vh]">
+        <img class="py-2 w-44 px-6 mt-2 " src="images/asset1 1.png" alt="">
+        <div class="text-white px-6 my-4">
+          <p class="text-xs font-bold py-2">FEATURE</p>
+          <p class="text-lg font-bold">Maximize the return over your investments with Pulsar Template</p>
+        </div>
+      </div>
+      <div class="bg-[#312F2F] rounded-xl  w-72 md:w-[46%] h-[15vh] md:h-[20vh] lg:h-[27vh] relative">
+        <div class="  text-white flex flex-row px-5 pt-4">
+          <div class="">
+            <p class="text-xs font-bold py-2">MOBILE</p>
+            <p class=" text-xs md:text-sm font-bold max-w-52">Fast and supreme 
+              support 24/7 all year 
+              around for your company</p>  
+          </div>
+          <div>
+            <img class="absolute w-[25%] left-[70%] -bottom-2 transform -translate-x-2 -translate-y-2" src="images/Frame 758.png" alt="">
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+ </section>
+ <!-- benefits section -->
+ <section class="bg-[#F5F5F5] min-h-screen py-12 px-6  md:px-30 ">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+    
+    <!-- Left Content -->
+    <div class="space-y-6">
+      <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full">CREATIVE</span>
+      <h2 class="text-3xl font-bold">Our Rock and Roll</h2>
+      <p class="text-[#939394]">We bring ideas to life by combining years of</p>
+      <img src="images/Frame 50.png" alt="">
+      
+    </div>
+
+    <!-- Right Content -->
+    <div class="space-y-6 pt-4 md:pt-80">
+      <span class="bg-transparent text-black text-sm font-bold py-1 px-4 rounded-full border-2 border-[#FE5E54]">DESIGN</span>
+      <h2 class="text-2xl font-bold">Pulsar was designed with the idea of being easy to use</h2>
+            <p class="text-[#939394]">Easy as just on click to edit and be online in on time</p>
+            <h1 class="text-[#312F2F] font-semibold text-lg">Overview</h1>
+            <p class="text-[#939394]">Pulsar boasts a visually striking and modern design that 
+              is sure to leave a lasting impact on your visitors start 
+              today with Pulsar Template</p>
+
+
+    </div>
+
+    <!-- Left Section -->
+    <div class="space-y-6">
+      <h2 class="text-3xl font-bold">Seamless Responsiveness Pulsar is fully responsive</h2>
+      <p class="text-[#939394]">Non-Code Template for Creatives like you</p>
+      <p class="text-[#939394]">With its clean layouts, sleek, typography, and engaging animations, this template ensures a memorable user experience.</p>
+      <button class="bg-[#FE5E54] text-white text-sm font-bold py-3 px-6 rounded-full ">Try This Plan</button>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center">
+      <img src="images/Frame 59.png" class=" h-auto" alt="Mobile UI">
+    </div>
+
+  </div>
+</section>
+<!-- Team section -->
+<div class="space-y-6 px-7 py-28 md:px-20 ">
+  <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full">TEAM</span>
+  <h2 class="text-4xl font-bold">Our Talented People</h2>
+  <p class="text-[#939394] w-80">We bring ideas to life by combining years of 
+    experiences of our talented team.</p>
+  
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 py-6 px-20">
+  <!-- Team Member 1 -->
+  <div class="flex flex-col items-start">
+    <img src="images/team_1.png" alt="Team Member 1" class="w-full h-auto object-cover rounded-lg mb-4">
+    <div class="text-left">
+      <p class="font-bold text-xl">Alfredo Ottis</p>
+      <p class="text-sm text-[#939394]">CEO</p>
+    </div>
+  </div>
+
+  <!-- Team Member 2 -->
+  <div class="flex flex-col items-start">
+    <img src="images/team_2.png" alt="Team Member 2" class="w-full h-auto object-cover rounded-lg mb-4">
+    <div class="text-left">
+      <p class="font-bold text-lg">Jordan Sambo</p>
+      <p class="text-sm text-[#939394]">CFO</p>
+    </div>
+  </div>
+
+  <!-- Team Member 3 -->
+  <div class="flex flex-col items-start">
+    <img src="images/team_3.png" alt="Team Member 3" class="w-full h-auto object-cover rounded-lg mb-4">
+    <div class="text-left">
+      <p class="font-bold text-lg">Tom Yhorke</p>
+      <p class="text-sm text-[#939394]">CTO</p>
+    </div>
+  </div>
+
+  <!-- Team Member 4 -->
+  <div class="flex flex-col items-start">
+    <img src="images/team_4.png" alt="Team Member 4" class="w-full h-auto object-cover rounded-lg mb-4">
+    <div class="text-left">
+      <p class="font-bold text-lg">Catty Hills</p>
+      <p class="text-sm text-[#939394]">DESIGNER</p>
+    </div>
+  </div>
+
+  <!-- Team Member 5 -->
+  <div class="flex flex-col items-start">
+    <img src="images/team_5.png" alt="Team Member 5" class="w-full h-auto object-cover rounded-lg mb-4">
+    <div class="text-left">
+      <p class="font-bold text-lg">Brandon Murphy</p>
+      <p class="text-sm text-[#939394]">CODER</p>
+    </div>
+  </div>
+
+  <!-- Team Member 6 -->
+  <div class="flex flex-col items-start">
+    <img src="images/team_6.png" alt="Team Member 6" class="w-full h-auto object-cover rounded-lg mb-4">
+    <div class="text-left">
+      <p class="font-bold text-lg">Maria Zurich</p>
+      <p class="text-sm text-[#939394]">SUPPORT</p>
+    </div>
+  </div>
+</div>
+<!-- Features section -->
+<section class="px-4 md:px-20 py-5" >
+  <div class="space-y-6 px-2 py-16">
+    <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full">WORKS</span>
+    <h2 class="text-4xl font-bold">Featured Works</h2>
+    <p class="text-[#939394] w-80">Find our latest works here</p>
+  </div>
+
+  <div>
+    <!-- Feature 1 -->
+    <div>
+      <img src="images/feature_4.png" alt="Feature 1" class="w-full h-auto  text-center object-cover rounded-lg mb-6">
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="flex  flex-col sm:flex-row gap-4 items-center">
+      <img src="images/feature_2.png" alt="Feature 2" class="w-[50%] h-auto object-cover rounded-lg mb-6">
+      <img src="images/feature_3.png" alt="Feature 3" class="w-[50%] h-auto object-cover rounded-lg mb-6">
+    </div>
+
+    <!-- Feature 4 -->
+    <div>
+      <img src="images/feature_1.png" alt="Feature 4" class="w-full h-auto object-cover rounded-lg mb-16">
+    </div>
+  </div>
+</section>
+
+<section class="px-4 md:px-20 py-5">
+  <div class="flex flex-wrap md:flex-nowrap items-center gap-8">
+    <!-- Left Side (Text Content) -->
+    <div class="space-y-6 px-2">
+      <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full">TEAM</span>
+      <h2 class="text-4xl font-bold">
+        With a sleek design Pulsar ensures a memorable user experience.
+      </h2>
+      <p class="text-[#939394] w-80">Your website will look flawless on all devices</p>
+      <h2 class="text-xl font-bold">Features</h2>
+      <ul class="grid grid-cols-2 gap-4 list-none">
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          No credit card required
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Easy customization
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Instant access
+        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Fast support
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Side (Image) -->
+    <div class="w-full">
+      <img src="images/image 5.png" alt="Feature Image" class="max-w-full h-auto">
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<div class="space-y-6 px-2 py-16 text-center">
+  <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full">PRICING</span>
+  <h2 class="text-4xl font-bold">
+     Pricing Plans 
+  </h2>
+  <p class="text-[#939394]">Check our easy and simple plans</p>
+  <img src="images/year_month.png" alt="" class="w-[25%] mx-auto">
+</div>
+
+<div class="flex  flex-col md:flex-row gap-6 justify-center items-center">
+  <!-- First Card -->
+  <div class="relative w-80">
+    <img src="images/Rectangle 25.png" alt="Card Image" class="w-full rounded-2xl">
+    <div class="absolute top-0 left-0 w-full h-full p-6 flex flex-col justify-between text-white">
+      <h3 class="text-lg font-bold py-2">Basic</h3>
+      <p class="text-sm text-[#A4A4A5]">Get unlimited services retainer </p>
+      <h2 class="text-3xl font-bold mt-4">$99/mo</h2>
+      <p class="text-sm font-semibold mt-2">Includes</p>
+      <ul class=" space-y-2 mt-2  list-none">
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs bg-white text-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Business Consultation        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs bg-white text-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Webflow Development
+                </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs bg-white text-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          One to One Training
+                </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs bg-white text-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Phone and Live Support        </li>
+      </ul>
+      <button class="mt-6 bg-[#FE5E54] text-white font-bold py-2 px-6 rounded-full w-full">
+        Get This Plan
+      </button>
+    </div>
+  </div>
+     <!-- Second Card -->
+
+  <div class="relative w-80 ">
+    <img src="images/Rectangle 38.png" alt="Card Image" class="w-full rounded-2xl">
+    <div class="absolute top-0 left-0 w-full h-full p-6 flex flex-col justify-between text-[#312F2F]">
+      <h3 class="text-lg font-bold py-2">Pro</h3>
+      <p class="text-sm text-[#A4A4A5]">Get access  to all of our services  </p>
+      <h2 class="text-3xl font-bold mt-4">$149/mo</h2>
+      <p class="text-sm font-semibold mt-2">Includes</p>
+      <ul class=" space-y-2 mt-2  list-none">
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Business Consultation        </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Webflow Development
+                </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          One to One Training
+                </li>
+        <li class="flex items-center gap-2">
+          <i class="fa-solid fa-check text-xs text-white bg-[#312F2F] rounded-full w-4 h-4 p-3 flex justify-center items-center"></i>
+          Phone and Live Support        </li>
+      </ul>
+      <button class="mt-6 bg-[#312F2F] text-white font-bold py-2 px-6 rounded-full w-full">
+        Get This Plan
+      </button>
+    </div>
+  </div>
+
+  
+</div>
+<!-- FAQ Section -->
+<section class="max-w-4xl mx-auto my-12 px-10">
+  <h2 class="text-4xl text-[#312F2F] font-bold mb-16">Frequently Asked Questions</h2>
+
+  <!-- Get Started for Free -->
+  <div class="flex justify-between items-center bg-[#312F2F] text-white p-4 rounded-3xl cursor-pointer">
+    <div>
+      <p class="font-bold">Get Started for Free</p>
+      <p class="text-sm text-gray-300">Start free while you learn more</p>
+    </div>
+    <div class="w-8 h-8 flex justify-center items-center bg-[#FE5E54] rounded-full">
+      <i class="fa-solid fa-chevron-right text-white"></i>
+    </div>
+  </div>
+
+  <!-- FAQ Items -->
+  <div class="space-y-3 mt-4">
+    <div class="flex justify-between items-center border border-[#FE5E54] p-4 rounded-3xl cursor-pointer">
+      <p class="font-semibold">Do you work with small business?</p>
+      <div class="w-8 h-8 flex justify-center items-center bg-[#FE5E54] rounded-full">
+        <i class="fa-solid fa-chevron-down text-white"></i>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center border border-[#FE5E54] p-4 rounded-3xl cursor-pointer">
+      <p class="font-semibold">How can I contact you?</p>
+      <div class="w-8 h-8 flex justify-center items-center bg-[#FE5E54] rounded-full">
+        <i class="fa-solid fa-chevron-down text-white"></i>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center border border-[#FE5E54] p-4 rounded-3xl cursor-pointer">
+      <p class="font-semibold">Where are you located?</p>
+      <div class="w-8 h-8 flex justify-center items-center bg-[#FE5E54] rounded-full">
+        <i class="fa-solid fa-chevron-down text-white"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="flex flex-col lg:flex-row items-center lg:items-start gap-10 px-6 md:px-40 py-16">
+  <!-- Left Section -->
+  <div class="w-full lg:w-1/3 text-left space-y-4">
+      <img src="images/git_in_touch.png" alt="Profile" class="w-14 h-10 rounded-full">
+      <h2 class="text-3xl font-bold">Get in Touch <br> with Us!</h2>
+      <p class="text-[#939394]">We are waiting for your message</p>
+      
+      <div class="space-y-3 mt-4">
+          <div class="flex items-start gap-3">
+              <img src="images/ic_outline-home.png" alt="Location Icon" class="w-6 h-6">
+              <p class="text-[#939394]">
+                  <strong class="text-black">Address</strong><br>
+                  Riverside 25, North <br> San Francisco, California
+              </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+              <img src="images/ic_outline-home-repair-service.png" alt="Phone Icon" class="w-6 h-6 text-left">
+              <p class="text-[#939394]">
+                  <strong class="text-black">Phone</strong><br>
+                  +123 456 7890
+              </p>
+          </div>
+
+          <div class="flex items-start gap-3">
+              <img src="images/ic_outline-message.png" alt="Email Icon" class="w-6 h-6">
+              <p class="text-[#939394]">
+                  <strong class="text-black">Email</strong><br>
+                  hi@website.com
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Right Section (Form) -->
+  <div class="w-full lg:w-2/3 bg-white p-8 shadow-lg rounded-xl">
+      <form class="space-y-4">
+          <input type="text" placeholder="Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FE5E54]">
+          <input type="tel" placeholder="Phone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FE5E54]">
+          <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FE5E54]">
+          <input type="text" placeholder="Budget" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FE5E54]">
+          <textarea placeholder="Message" rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FE5E54]"></textarea>
+          
+          <button type="submit" class="w-full bg-[#FE5E54] text-white py-3 rounded-md font-bold hover:bg-[#FE5E54] transition">
+              Submit Now
+          </button>
+      </form>
+  </div>
+</div>
+
+<div class="px-6 lg:px-20 py-16">
+  <!--  News Section  -->
+  <div class="space-y-2 mb-4">
+      <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full">BLOG</span>
+      <h2 class="text-4xl font-bold">
+        News & Updates      </h2>
+  </div>
+  <hr class="border-t border-[#D1D1D1] my-4">
+
+  <!-- Main News Item -->
+  <div class="grid lg:grid-cols-2 gap-6 mb-8">
+      <img src="images/news_1.png" alt="Main News" class="w-full h-64 object-cover rounded-xl mr-12">
+      
+      <div class="flex flex-col px-20 justify-center space-y-4">
+          <span class="bg-transparent text-black text-sm font-bold py-1 px-4 rounded-full w-fit border-2 border-[#FE5E54]">DESIGN</span>
+
+          <h3 class="text-xl w-fit font-bold">We Launch Pulsar Template <br> Week!</h3>
+          <p class="text-[#312F2F]">Pulsar is a Webflow No Code Template for <br> Creatives like you</p>
+          <button class="bg-[#FE5E54] text-white text-sm font-bold py-3 px-6 w-fit rounded-full ">Read more</button>
+        </div>
+  </div>
+  <hr class="border-t border-[#D1D1D1] my-4">
+
+  <!-- Grid of News Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- News Card 1 -->
+      <div class="bg-transparent  p-4 rounded-xl">
+          <img src="images/news_2.png" alt="News 1" class="w-full h-40 object-cover rounded-xl mb-4">
+          <span class="bg-transparent text-black text-sm font-semibold py-1 px-4 rounded-full w-fit border-2 border-[#FE5E54]">UPDATE</span>
+          <h3 class="mt-2 text-lg text-[#312F2F] font-bold">How to Find Great Webflow Consulting Expert</h3>
+          <p class="text-[#939394] text-sm">Pulsar is a Webflow No Code Template for Creatives like you</p>
+          <a href="#" class="text-[#312F2F]  font-semibold mt-2 underline text-sm inline-block">READ MORE</a>
+      </div>
+
+      <!-- News Card 2 -->
+      <div class="bg-transparent  p-4 rounded-xl">
+        <img src="images/news_3.png" alt="News 2" class="w-full h-40 object-cover rounded-lg mb-4">
+        <span class="bg-transparent text-black text-sm font-semibold py-1 px-4 rounded-full w-fit border-2 border-[#FE5E54]">STUDIO</span>
+        <h3 class="mt-2 text-lg text-[#312F2F] font-bold">From Zero to Hero: How to Launch a Successful Startup</h3>
+          <p class="text-[#939394] text-sm">Pulsar is a Webflow No Code Template for Creatives like you</p>
+          <a href="#" class="text-[#312F2F] font-semibold mt-2 underline text-sm inline-block">READ MORE</a>
+      </div>
+
+
+      <!-- News Card 3 -->
+      <div class="bg-transparent  p-4 rounded-xl">
+        <img src="images/news_4.png" alt="News 3" class="w-full h-40 object-cover rounded-lg mb-4">
+        <span class="bg-transparent text-black text-sm font-bold py-1 px-4 rounded-full w-fit border-2 border-[#FE5E54]">DESIGN</span>
+        <h3 class="mt-2 text-lg text-[#312F2F] font-bold">7 Habits of Highly Successful Business People</h3>
+          <p class="text-[#939394] text-sm">Pulsar is a Webflow No Code Template for Creatives like you</p>
+          <a href="#" class="text-[#312F2F]  font-semibold underline text-sm mt-2 inline-block">READ MORE</a>
+      </div>
+
+  </div>
+  <hr class="border-t border-[#D1D1D1] my-4">
+
+</div>
+
+<!-- trai and follow section -->
+<div class="flex flex-col lg:flex-row gap-6 px-6 lg:px-20 py-10">
+  <!-- Trial Card -->
+  <div class="relative w-full ">
+    <img src="images/trail.png" alt="Trial" class="w-full h-[50vh] md:h-fit">
+    <div class="absolute top-0 left-0 w-full h-full p-6 flex flex-col justify-center">
+      <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 w-fit rounded-full">TRAIL</span>
+      <h3 class="text-[#312F2F] text-3xl md:text-4xl font-bold mt-2 w-full md:w-3/4 lg:w-2/3">Start Your 30-Day <br> Free Trial</h3>
+      <p class="text-[#939394] text-sm md:text-lg my-2 w-full md:w-3/4 lg:w-2/3">Let’s do this, are you ready!</p>
+      <div class="flex items-center text-nowrap mt-4 md:mt-0">
+        <button class="bg-[#FE5E54] text-white p-2 md:p-1 rounded-full text-sm font-medium hover:bg-[#FE5E54] flex items-center gap-2" aria-label="Buy Template">
+          Buy Template 
+          <i class="fas fa-arrow-right text-sm md:text-2xl text-[#FE5E54] bg-[#312F2F] rounded-full p-2 w-8 h-8 flex items-center justify-center"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instagram Card -->
+  <div class="relative w-[80%] mt-2 lg:mt-0">
+    <img src="images/follow.png" alt="Instagram" class="w-full h-[30vh] md:h-fit">
+    <div class="absolute top-0 left-0 w-full h-full p-6 flex flex-col justify-center">
+      <span class="bg-[#FE5E54] text-white text-xs font-bold px-3 py-1 rounded-full w-fit">FOLLOW</span>
+      <h3 class="text-white text-2xl font-bold mt-2">Instagram</h3>
+      <img src="images/insta.png" alt="Instagram" class="py-2">
+      <p class="text-[#939394]">@Pulsar</p>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+<footer class="bg-[#312F2F] text-white py-12 -mr-8 lg:-mr-0">
+  <div class="max-w-6xl mx-auto px-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- Company -->
+    <div>
+      <h2 class="text-xl font-bold text-[#FE5E54] -mt-6 ">Crea<span class="text-white">Nova.</span></h2>
+
+
+      
+      <h3 class="font-bold text-lg">Company</h3>
+
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="#" class="text-[#FE5E54]">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Pages -->
+    <div>
+      <h3 class="font-bold text-lg">Pages</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a href="#">404</a></li>
+        <li><a href="#">Licensing</a></li>
+        <li><a href="#">Instructions</a></li>
+        <li><a href="#">Style Guide</a></li>
+        <li><a href="#">Changelog</a></li>
+        <li><a href="#">More Templates!</a></li>
+      </ul>
+    </div>
+
+    <!-- Address & Inquiries -->
+    <div>
+      <h3 class="font-bold text-lg">Address</h3>
+      <p class="mt-4 text-sm">Riverside 25, San Francisco, California USA</p>
+      <a href="#" class="text-sm text-gray-400">View on Maps</a>
+
+      <h3 class="font-bold text-lg mt-4">Inquiries</h3>
+      <p class="text-sm">800-234-567</p>
+      <a href="mailto:hello@website.com" class="text-sm text-gray-400">hello@website.com</a>
+    </div>
+
+    <!-- Newsletter & Social Media -->
+    <div>
+      <h3 class="font-bold text-lg">Newsletter</h3>
+      <p class="mt-4 text-sm text-gray-400">Stay Updated with our Latest News</p>
+      <div class="mt-4 flex items-center border border-gray-500 rounded-full px-4 py-2">
+        <input type="email" placeholder="Your Email" class="bg-transparent outline-none text-sm flex-1">
+        <button class="w-8 h-8 flex items-center justify-center bg-[#FE5E54] rounded-full">
+          <i class="fa-solid fa-arrow-right text-white"></i>
+        </button>
+      </div>
+
+      <h3 class="font-bold text-lg mt-6">Follow Us</h3>
+      <div class="mt-4 flex space-x-3 text-lg">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
